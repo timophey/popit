@@ -1,0 +1,49 @@
+html, body{
+    min-height: 100vh;
+    
+}
+body{
+	background: orange;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+}
+#playground{
+	font-size: 7vmin;
+    background: rgba(255,255,255,.5);
+    width: 12em;
+    height: 12em;
+    border-radius: 0.6em;
+    display: flex;
+    padding: 0.3em;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: url(./img/Cute-magical-unicorn-premium-vector-PNG.png);
+    background-size: cover;
+}
+.pop{
+	border-radius: 1em;
+	background: rgba(255,255,255,.1);
+	margin: 0.1em;
+	position: relative;
+}
+.pop input{
+	position: absolute;
+	display: none;
+}
+.il{
+	display: block;
+	border-radius: 1em;
+	box-shadow: 0.05em  0.05em  0.1em #00000088;
+	width: 1em;
+	height: 1em;
+	background: radial-gradient(transparent, #0081b5);
+}
+.pop input:checked + .il{
+	box-shadow: 0 0  0.1em #00000088 inset;
+}
